@@ -1,0 +1,112 @@
+/* -------------import part-----
+ --------------------------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ /*------------------
+  common ------------*/
+ 
+ body{font-family: 'Poppins', sans-serif;
+ margin: 0px;}
+ 
+ /*-------------------------------
+  top part & third part----------*/
+ 
+ .top-part{
+     background-color: rgb(98, 15, 175);
+ 
+ margin-top: 0px;}
+ .top-heading{display: flex;
+ flex-direction: row;
+ }
+ .top-banner{width: 50%;}
+ .top-banner img{width: 490px;
+ height: 420px;
+ margin-left: 140px;
+ transition: transform 5s;}
+ .head{width: 485px;
+ height: 230px;
+ margin-left: 60px;}
+ .first{font-size: 50px;
+ line-height: 45px;
+ color: white;}
+ #transform:hover{transform: rotate(360deg);}
+ 
+ /*-------------------
+  ---------button part */
+ 
+ button{height: 35px;
+ width: 130px;
+ background-color: rgb(161, 38, 58);}
+ button>a{text-decoration: none;
+ color: White;}
+ 
+ /* ----------------
+ menu style---------- */
+ 
+ nav>ul>li>a{text-decoration: none;
+ color: white;
+ font-size: 15px;
+ margin-right:25px;
+ font-weight: 500;}
+ nav>ul>li{list-style: none;}
+ nav>ul{display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding-top: 22px;}
+ 
+     /* ----------------
+     ------middle-part */
+ 
+ 
+ .middle-part{width: 500px;
+ justify-content: center;
+ align-items: center;
+ margin-left: 470px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 0px;}
+ 
+     .players{display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ grid-row-gap: 5px;
+ margin-bottom: 55px;
+ margin-top: 55px;
+ justify-content: center;
+ grid-column-gap: 0px;
+ width: 300px;}
+ .player{align-items: center;
+ margin-left: 25px;
+ margin-bottom: 25px;
+ border: 1px solid rgb(197, 192, 192);
+ padding: 15px;
+ box-shadow: 10px 10px 10px;
+ 
+ }
+ .player img{width: 330px;
+ height: 420px;}
+ 
+ /*---------------
+  logo part ------*/
+ .logo img{height: 90px;
+ width: 300px;}
+ .logo{text-align: center;}
+ 
+ 
+ /*--------------------
+  footer part --------*/
+ footer{text-align: center;}
+ 
+ /*--------------- media query ----------------
+ --------------------------------------------*/
+ 
+ 
+ @media only screen and (max-width: 688px) {
+     .players{
+         grid-template-columns: repeat(1, 1fr);
+     width: 100%;
+ margin-right:60px;}
+ .player{flex-direction: column;
+ margin: 0 auto;}
+     .top-heading{display: block;}
+     .middle-part{margin-right: 300px;}
+     main{display: block;}
+ }
